@@ -1,13 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(29, 41, 52);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .Border_Line {
+    @apply w-36 h-1 border-b-4 border-yellow-500 mt-3 mb-5;
+  }
+  .Login_Signup {
+    @apply hidden md:block px-3 py-2 bg-indigo-700 rounded-lg font-bold cursor-pointer text-white hover:bg-indigo-500;
+  }
+  .Nav_main {
+    @apply w-full bg-indigo-200 flex h-14 justify-between px-4 md:px-4 items-center;
+  }
+  .logo {
+    @apply w-44;
+  }
+  .ul {
+    @apply md:flex hidden font-semibold cursor-pointer;
+  }
+  .card_mainDiv {
+    @apply text-white p-5 rounded-lg text-center space-y-2 mx-auto w-48;
+  }
+  .p1 {
+    @apply text-2xl font-semibold;
+  }
+  .p2 {
+    @apply font-bold text-xl text-gray-500;
+  }
+  .card_img {
+    @apply w-20 h-auto mx-auto;
+  }
+  /* .name{
+    @apply 
+  } */
 }
